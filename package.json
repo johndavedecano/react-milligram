@@ -2,7 +2,7 @@
   "name": "react-milligram",
   "version": "1.0.0",
   "description": "React Components using Milligram CSS Framework",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
