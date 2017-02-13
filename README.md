@@ -1,5 +1,5 @@
-# react-milligram
-React Components using Milligram CSS Framework
+# React-Milligram
+React-Milligram is a library of reusable front-end components which extends the power of Milligram CSS Framework. A clean and fast CSS UI Framework.
 
 # Installation
 
