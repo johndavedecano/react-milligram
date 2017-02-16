@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
-import Nav from './components/Nav';
-import Code from './components/Code';
+import Nav from './sample/Nav';
+import Code from './sample/Code';
+import Button from './Button';
 
 class App extends Component {
     
-    state = {
-        page: undefined
-    };
-
     render() {
         return <main className="wrapper">
             <Nav />
@@ -22,20 +19,24 @@ class App extends Component {
                    <strong>Add to your index.html head tag</strong>
                 </p>
                 <Code>
-                    &lt;link rel=&quot;stylesheet&quot; href=&quot;//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic&quot;/&gt;
+                    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"/>
                 </Code>
                 <Code>
-                    &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.rawgit.com/necolas/normalize.css/master/normalize.css&quot;/&gt;
+                    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css"/>
                 </Code>
                 <Code>
-                    &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css&quot;/&gt;
+                    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css"/>
                 </Code>
             </section>
             <section className="container" name="#buttons">
                 <h3 className="title">Buttons</h3>
-                <p className="description">
-                   
-                </p>
+                <p className="description">We have three kinds of buttons default outline and clear.</p>
+                <Button style={{marginRight: 10}}>Default</Button>
+                <Button style={{marginRight: 10}} outline>Outline</Button>
+                <Button clear>Clear</Button>
+                <Code><Button>Default</Button></Code>
+                <Code><Button outline>Outline</Button></Code>
+                <Code><Button clear>Clear</Button></Code>
             </section>
         </main>
     }
