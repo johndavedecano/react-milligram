@@ -5,19 +5,16 @@ import {pick} from 'lodash';
 class Button extends Component {
 
     constructor(props) {
-        
         super(props);
-
         this.allowedAttributes = [
             'name',
             'style',
             'type',
             'onClick',
-        ]
+        ];
     }
 
     render() {
-        
         const classNames = cx({
             ['button']: true,
             ['button-outline']: this.props.outline,
